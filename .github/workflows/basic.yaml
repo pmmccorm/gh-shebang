@@ -3,9 +3,10 @@ name: basic
 on:
   workflow_dispatch:
     inputs:
-      decription: "First input"
-      type: string
-      required: true
+      positional_arg:
+        decription: "TRequired first position argument"
+        type: string
+        required: true
 
 jobs:
   echo:
