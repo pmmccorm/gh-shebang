@@ -1,0 +1,16 @@
+name: basic
+
+on:
+  workflow_dispatch:
+    inputs:
+      decription: "First input"
+      type: string
+      required: true
+
+jobs:
+  echo:
+    runs-on: ubuntu-latest
+    steps:
+      - name: echo
+        id: echo
+        run: echo ${{ inputs.name }}
